@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenGetallenTest", "EvenGetallenTest\EvenGetallenTest.csproj", "{3E0D9303-FC27-4A31-9659-5A3A524E8AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenGetallen", "EvenGetallen\EvenGetallen.csproj", "{4E314828-E138-4BC2-9CA5-B845D9A1DB56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E0D9303-FC27-4A31-9659-5A3A524E8AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0D9303-FC27-4A31-9659-5A3A524E8AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0D9303-FC27-4A31-9659-5A3A524E8AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0D9303-FC27-4A31-9659-5A3A524E8AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E314828-E138-4BC2-9CA5-B845D9A1DB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E314828-E138-4BC2-9CA5-B845D9A1DB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E314828-E138-4BC2-9CA5-B845D9A1DB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E314828-E138-4BC2-9CA5-B845D9A1DB56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
