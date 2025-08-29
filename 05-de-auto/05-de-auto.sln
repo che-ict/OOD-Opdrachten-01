@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto", "Auto\Auto.csproj", "{F56332F6-068E-43BA-93E5-D38538BB9228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoTest", "AutoTest\AutoTest.csproj", "{F15B8E1B-B724-4BF0-B755-82D57C2C4368}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F56332F6-068E-43BA-93E5-D38538BB9228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56332F6-068E-43BA-93E5-D38538BB9228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56332F6-068E-43BA-93E5-D38538BB9228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56332F6-068E-43BA-93E5-D38538BB9228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15B8E1B-B724-4BF0-B755-82D57C2C4368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15B8E1B-B724-4BF0-B755-82D57C2C4368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15B8E1B-B724-4BF0-B755-82D57C2C4368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15B8E1B-B724-4BF0-B755-82D57C2C4368}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
