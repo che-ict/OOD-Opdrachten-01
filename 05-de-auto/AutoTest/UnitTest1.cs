@@ -10,7 +10,7 @@ public class Tests
     [Test]
     public void AutoHeeftEigenschappenTest()
     {
-        var auto = new Auto.Auto();
+        var auto = new Auto.Auto("A", "B", 2000);
         Assert.Multiple(() =>
         {
             Assert.That(auto, Has.Property("Merk"));

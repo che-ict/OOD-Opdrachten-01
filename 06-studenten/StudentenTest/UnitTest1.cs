@@ -12,7 +12,7 @@ public class Tests
     [Test]
     public void StudentEigenschappen()
     {
-        var student = new Student();
+        var student = new Student("Jantje", 22, 50);
         Assert.Multiple(() =>
         {
             Assert.That(student, Has.Property("Naam"));

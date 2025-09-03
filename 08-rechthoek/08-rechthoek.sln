@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rechthoek", "Rechthoek\Rechthoek.csproj", "{8D57ECC6-8E02-4936-AAE5-2A72D7ED9A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RechthoekTest", "RechthoekTest\RechthoekTest.csproj", "{9530858A-7476-4B86-87AA-0267995051E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D57ECC6-8E02-4936-AAE5-2A72D7ED9A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D57ECC6-8E02-4936-AAE5-2A72D7ED9A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D57ECC6-8E02-4936-AAE5-2A72D7ED9A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D57ECC6-8E02-4936-AAE5-2A72D7ED9A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9530858A-7476-4B86-87AA-0267995051E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9530858A-7476-4B86-87AA-0267995051E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9530858A-7476-4B86-87AA-0267995051E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9530858A-7476-4B86-87AA-0267995051E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

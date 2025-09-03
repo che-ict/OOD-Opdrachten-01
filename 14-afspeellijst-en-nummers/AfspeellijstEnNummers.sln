@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfspeellijstEnNummers", "AfspeellijstEnNummers\AfspeellijstEnNummers.csproj", "{32F8969A-85A2-48BE-AD74-DFC1A729A4C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AfspeellijstEnNummersTest", "AfspeellijstEnNummersTest\AfspeellijstEnNummersTest.csproj", "{BAAD0E46-E8E4-453E-A75D-FB46DE93C496}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32F8969A-85A2-48BE-AD74-DFC1A729A4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32F8969A-85A2-48BE-AD74-DFC1A729A4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32F8969A-85A2-48BE-AD74-DFC1A729A4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32F8969A-85A2-48BE-AD74-DFC1A729A4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAAD0E46-E8E4-453E-A75D-FB46DE93C496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAAD0E46-E8E4-453E-A75D-FB46DE93C496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAAD0E46-E8E4-453E-A75D-FB46DE93C496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAAD0E46-E8E4-453E-A75D-FB46DE93C496}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
