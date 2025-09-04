@@ -1,11 +1,12 @@
+using System.Collections.Immutable;
+
 namespace LijstenTest;
 
 using Lijsten;
 
 public class Tests
 {
-    
-    List<string> baseList =  new List<string>()
+    readonly ImmutableList<string> _baseList =  new List<string>()
     {
         "Scrooge",
         "Goofy",
@@ -14,7 +15,7 @@ public class Tests
         "Louie",
         "Mickey",
         "Minnie"
-    };
+    }.ToImmutableList();
     
     [SetUp]
     public void Setup()
@@ -24,15 +25,15 @@ public class Tests
     [Test]
     public void TestMetDonald()
     {
-        var result = Lijsten.MetDonald(baseList);
+        var result = Lijsten.MetDonald(_baseList.ToList());
         Assert.That(result, Contains.Item("Donald"));
     }
     
     [Test]
     public void TestMetTweeDonalds()
     {
-        var result = Lijsten.MetDonald(baseList);
-        result = Lijsten.MetDonald(baseList);
+        var result = Lijsten.MetDonald(_baseList.ToList());
+        result = Lijsten.MetDonald(result.ToList());
         var filteredResult = result.Where(x => x == "Donald").ToList();
         Assert.Multiple(() =>
         {
@@ -45,7 +46,7 @@ public class Tests
     public void TestEersteDrie()
     {
         Random random = new Random();
-        var shuffledInput = baseList.OrderBy(x => random.Next()).ToList();
+        var shuffledInput = _baseList.OrderBy(_ => random.Next()).ToList();
         var result = Lijsten.EersteDrie(shuffledInput);
         Assert.Multiple(() =>
         {
@@ -60,7 +61,7 @@ public class Tests
     public void TestLaatsteDrie()
     {
         Random random = new Random();
-        var shuffledInput = baseList.OrderBy(x => random.Next()).ToList();
+        var shuffledInput = _baseList.OrderBy(_ => random.Next()).ToList();
         var result = Lijsten.LaatsteDrie(shuffledInput);
         Assert.Multiple(() =>
         {
@@ -74,10 +75,10 @@ public class Tests
     [Test]
     public void TestZonderGoofy()
     {
-        var result = Lijsten.ZonderGoofy(baseList);
+        var result = Lijsten.ZonderGoofy(_baseList.ToList());
         Assert.Multiple(() =>
         {
-            Assert.That(result, Has.Count.EqualTo(baseList.Count-1));
+            Assert.That(result, Has.Count.EqualTo(_baseList.Count-1));
             Assert.That(result, Does.Not.Contain("Goofy"));
         });
     }
@@ -86,7 +87,7 @@ public class Tests
     public void TestZonderGoofyMult()
     {
         Random random = new Random();
-        var input = new List<string>(baseList);
+        var input = new List<string>(_baseList);
         for (int i = 0; i < random.Next()+1; i++)
         {
             input.Add("Goofy");
@@ -94,7 +95,7 @@ public class Tests
         var result = Lijsten.ZonderGoofy(input);
         Assert.Multiple(() =>
         {
-            Assert.That(result, Has.Count.EqualTo(baseList.Count-1));
+            Assert.That(result, Has.Count.EqualTo(_baseList.Count-1));
             Assert.That(result, Does.Not.Contain("Goofy"));
         });
     }
@@ -103,8 +104,7 @@ public class Tests
     public void TestZonderE()
     {
         var expectedResult = new List<string>(){"Goofy", "Daisy"};
-        var result = Lijsten.ZonderE(baseList); 
+        var result = Lijsten.ZonderE(_baseList.ToList()); 
         Assert.That(result, Is.EquivalentTo(expectedResult));
     }
 }
-
