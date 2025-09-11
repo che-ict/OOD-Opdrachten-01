@@ -42,9 +42,9 @@ public class Tests
         var boek = new Boek("Mijn nieuwe boek", "David");
         Assert.Multiple(() =>
         {
-            Assert.That(boek.Titel, "Mijn nieuwe boek");
-            Assert.That(boek.Auteur, "David");
-            Assert.That(boek.ISBN, "n.v.t.");
+            Assert.That(boek.Titel, Is.EqualTo("Mijn nieuwe boek"));
+            Assert.That(boek.Auteur, Is.EqualTo("David"));
+            Assert.That(boek.ISBN, Is.EqualTo("n.v.t."));
         });
     }
 }
